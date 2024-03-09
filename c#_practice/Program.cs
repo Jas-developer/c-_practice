@@ -27,7 +27,7 @@ Console.WriteLine("My first name is " + stringDynamicArr[0]);*/
 
 /*STRINGS IN DEPTH*/
 
-using System.Text;
+/*using System.Text;
 
 string testString = "test"; //string is a reference type
 
@@ -60,4 +60,37 @@ Console.WriteLine("My name is {1} {0}", lastName, firstName);
 var sb = new StringBuilder();
 
 var testStringBuilder = sb.AppendLine("dwdd");
-Console.WriteLine(testStringBuilder.ToString());
+Console.WriteLine(testStringBuilder.ToString());*/
+
+
+
+using System.Net.NetworkInformation;
+using System.Text;
+//heap are reference type
+//DNS domain name server
+
+Ping pingSender  = new Ping(); //classes are stored in the heap
+PingOptions pingOptions = new PingOptions();
+
+
+pingOptions.DontFragment = true;
+
+string data = "Learn how to code";
+byte[] buffer = Encoding.ASCII.GetBytes(data);
+int timeout = 120;
+string address = "4.2.2.2";
+PingReply reply = pingSender.Send(address,timeout, buffer,pingOptions);
+
+if(reply.Status == IPStatus.Success)
+{
+    Console.WriteLine("Response: {0}", reply.Status.ToString());
+    Console.WriteLine("RoundTrip: {0}", reply.RoundtripTime.ToString());
+    Console.WriteLine("Time to live: {0}", reply.Options.Ttl.ToString());
+    Console.WriteLine("Buffer size: {0}", reply.Buffer.Length.ToString());
+}
+
+
+
+
+
+

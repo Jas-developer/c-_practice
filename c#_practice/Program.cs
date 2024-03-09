@@ -64,7 +64,7 @@ Console.WriteLine(testStringBuilder.ToString());*/
 
 
 
-using System.Net.NetworkInformation;
+/*using System.Net.NetworkInformation;
 using System.Text;
 //heap are reference type
 //DNS domain name server
@@ -89,8 +89,28 @@ if(reply.Status == IPStatus.Success)
     Console.WriteLine("Buffer size: {0}", reply.Buffer.Length.ToString());
 }
 
+*/
 
 
 
+
+//when you are declaring a reference type you have to use a new
+
+
+/*LIST IN C#*/
+
+
+using Practice;
+
+List<Part> lst = new List<Part>(); //you are putting it in a stack if it is small 
+
+lst.Add(new Part { PartName = "HeadLight", PartId = 1 });
+lst.Add(new Part { PartName = "Bumper", PartId = 2 });
+
+foreach(Part part in lst)
+{
+    Console.WriteLine(part.PartName.ToString().ToLower());
+    Console.WriteLine(part.PartId.ToString().ToLower());
+}
 
 

@@ -76,10 +76,10 @@ PingOptions pingOptions = new PingOptions();
 pingOptions.DontFragment = true;
 
 string data = "Learn how to code";
-byte[] buffer = Encoding.ASCII.GetBytes(data);
+byte[] buffer = Encoding.ASCII.GetBytes(data); //byte is bellow 255
 int timeout = 120;
 string address = "4.2.2.2";
-PingReply reply = pingSender.Send(address,timeout, buffer,pingOptions);
+PingReply reply = pingSender.Send(address,timeout, buffer,pingOptions); //reference type
 
 if(reply.Status == IPStatus.Success)
 {

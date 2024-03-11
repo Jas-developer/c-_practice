@@ -102,7 +102,7 @@ if(reply.Status == IPStatus.Success)
 
 /*using Practice;
 
-/*All object added will be on the list*/List<Part> lst = new List<Part>(); //you are putting it in a stack if it is small 
+/*All object added will be on the list*/////you are putting it in a stack if it is small 
 
 /*lst.Add(new Part { PartName = "HeadLight", PartId = 1 }); //adding properties to the object
 lst.Add(new Part { PartName = "Bumper", PartId = 2 }); // adding properties to the object
@@ -121,6 +121,61 @@ foreach (Part part in lst)
 
 //IF/ELSE CONDITIONAL STATEMENT
 
+var test = 0;
+var test3 = 3;
+
+if(test == 0 && test3 == 3)
+{
+    Console.WriteLine("This part is executed");
+}else
+{
+    Console.WriteLine("I dont know what you want");
+}
+
+//boolean else if statement
+
+bool notEqual = 5 == 7;// will print false
+Console.WriteLine(notEqual);
+//will print true
+bool isEqual = 5 != 3;//will print true
+Console.WriteLine(isEqual);
 
 
+bool greaterThan = 5 > 2; // true
+bool lessThan = 5 < 2; //false
+
+int num1 = 4;
+int num2 = 5;
+
+bool whichGreater = num1 > num2; // false
+
+Console.WriteLine($"num1 is greaster than num2? {whichGreater}");
+
+//greater than equal 
+bool greaterThanOrEqual = 5 >= 5;//true
+bool lessThanOrEqual = 5 <= 5; //true
+
+string Greater = $" is 5 less than 5 or equal to 5 ? {lessThanOrEqual} the opposite of it is also {greaterThanOrEqual}";
+Console.WriteLine(Greater);
+
+
+//AND OR  OPERATOR
+Console.WriteLine("AND OR Operator");
+
+bool andAnd = 5 == 5 && 3 != 7; // this will evaluate to true
+
+Console.WriteLine($"and or will result to {andAnd}");
+
+Console.WriteLine("IF AND ELSE STATEMENT");
+
+if(5 == num1)
+{
+    Console.WriteLine("true");
+} else if ( 3 == num2 )
+{
+    Console.WriteLine("Else if true");
+}else
+{
+    Console.WriteLine("Else true");
+}
 

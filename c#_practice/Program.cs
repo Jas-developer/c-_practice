@@ -100,17 +100,27 @@ if(reply.Status == IPStatus.Success)
 /*LIST IN C#*/
 
 
-using Practice;
+/*using Practice;
 
-List<Part> lst = new List<Part>(); //you are putting it in a stack if it is small 
+/*All object added will be on the list*/List<Part> lst = new List<Part>(); //you are putting it in a stack if it is small 
 
-lst.Add(new Part { PartName = "HeadLight", PartId = 1 });
-lst.Add(new Part { PartName = "Bumper", PartId = 2 });
+/*lst.Add(new Part { PartName = "HeadLight", PartId = 1 }); //adding properties to the object
+lst.Add(new Part { PartName = "Bumper", PartId = 2 }); // adding properties to the object
+lst.Add(new Part { PartName = "SideMirror", PartId = 1 }); // adding properties to the object
+lst.Add(new Part { PartName = "Mugs", PartId = 2 }); // adding properties to the object
 
-foreach(Part part in lst)
+foreach (Part part in lst)
 {
     Console.WriteLine(part.PartName.ToString().ToLower());
     Console.WriteLine(part.PartId.ToString().ToLower());
 }
+
+*/
+
+
+
+//IF/ELSE CONDITIONAL STATEMENT
+
+
 
 
